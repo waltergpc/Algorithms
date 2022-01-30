@@ -1,5 +1,5 @@
-let i = [13, 24, 05]
-let j = [13, 24, 20]
+let i = [13, 24, 58]
+let j = [13, 24, 59]
 
 const solution = (start, finish) => {
   let startdate = new Date(2021, 0, 0, start[0], start[1], start[2])
