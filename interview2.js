@@ -3,14 +3,16 @@ const convertInt = (integer) => {
   console.log(newString)
 }
 
-const convertToString = (integer) => {
+const convertToString = (integer, splitNumbers = []) => {
   let newString = {}
   let num = integer
-  let splitNumbers = []
-  while (num > 0) {
-    splitNumbers.unshift(num % 10)
-    num = Math.trunc(num / 10)
-    console.log(splitNumbers)
+  splitNumbers.unshift(num % 10)
+  num = Math.trunc(num / 10)
+  console.log(num)
+  console.log(splitNumbers)
+
+  if (num > 0) {
+    convertToString(num, splitNumbers)
   }
 
   let n = ''
