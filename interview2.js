@@ -13,15 +13,15 @@ const convertToString = (integer, splitNumbers = []) => {
 
   if (num > 0) {
     convertToString(num, splitNumbers)
+  } else {
+    let n = ''
+
+    for (let i = 0; i < splitNumbers.length; i++) {
+      n = n + splitNumbers[i]
+    }
+
+    console.log(n)
   }
-
-  let n = ''
-
-  for (let i = 0; i < splitNumbers.length; i++) {
-    n = n + splitNumbers[i]
-  }
-
-  console.log(n)
 }
 
 convertToString(1234)
