@@ -4,7 +4,6 @@ const convertInt = (integer) => {
 }
 
 const convertToString = (integer, splitNumbers = []) => {
-  let newString = {}
   let num = integer
   splitNumbers.unshift(num % 10)
   num = Math.trunc(num / 10)
@@ -24,4 +23,4 @@ const convertToString = (integer, splitNumbers = []) => {
   }
 }
 
-convertToString(1234)
+convertToString(34)
